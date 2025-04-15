@@ -3,49 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5">
+    <!--<meta http-equiv="refresh" content="22"> -->
     <title>Kurs1</title>
     <meta name="keywords" content="css,html, javascript">
     <meta name="description" content="Учебна страница">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-        </style>
+    <link rel="stylesheet" href="cssPublic/stylepublic.css">
+   
 </head>
 <body>
-    <h1>Zayd is my name</h1>
-    <p>Я <strong> хочу <em>освоить</em> язык html </strong> для доп заработка</p>
-    <img src="Др.jpg" alt="Аватар">
-    <table><thead><tr>
+    <div class="title">
+        <h1>Zayd is my name</h1>
+    </div>
+    
+    <div class="avatar">
+        <img src="Др.jpg" alt="Аватар">
+        <p>Я <strong> хочу <em>освоить</em> язык html </strong> для доп заработка</p>
+        
+    </div>
+    <table class="staj"><thead><tr>
         <th>Место работы</th>
         <th>Должность</th>
         <th>Период работы</th>
     </tr></thead>
     <tbody>
         <tr>
-            <td>НПО ПМ</td>
+            <td>НПО Шинник</td>
             <td>Программист - начальник группы</td>
-            <td>1980-1988</td>
+            <td>1980-1992</td>
         </tr>
         <tr>
-            <td>Завод конденсатр</td>
+            <td>Завод Металист</td>
             <td>Ведущий программист </td>
-            <td>1988-1992</td>
+            <td>1992-1995</td>
         </tr>
         <tr>
-            <td>Сбербанк</td>
-            <td>Ведущий программист - зам.управляющего </td>
-            <td>1992-2014</td>
+            <td>Металобаза</td>
+            <td>Ведущий программист - гл.технолог </td>
+            <td>1995-2024</td>
         </tr>
     </tbody>
 </table>
-<h2>Мои хобби</h2>
-<ol>
-    <li>Лыжи</li>
-    <li>Коньки</li>
-    <li>Плавание</li>
-    <li>Велосипед</li>
-    <li>Шахматы</li>
-</ol>
+<div  class="hobby">
+    <h2>Мои хобби</h2>
+    <ol>
+        <li>Лыжи</li>
+        <li>Дельтопланеризм</li>
+        <li>Плавание</li>
+        <li>Велосипед</li>
+        <li>Шахматы</li>
+    </ol>
+</div>
 <h2>Связаться со мной</h2>
 <form action="/">
     <div>
@@ -53,11 +60,11 @@
         <input type="text" id="name" placeholder="Укажите ваше имя">
     </div>
     <div>
-        <label for="email">Мой электронный адрес</label>
+        <label for="email">Мой электронный адрес:</label>
         <input type="email" placeholder="Zaraza@rambler.ru">
     </div>
     <div>
-        <label for="textA">Ваше сообщение</label><br>
+        <label for="textA">Ваше сообщение:</label><br>
         <textarea name="textA" id="textA" cols="130" rows="5"></textarea>
     </div>
     <button type="submit">Отправить сообщение</button>
